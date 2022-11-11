@@ -15,7 +15,7 @@
         <h1>{{ datapage.message }}</h1>
         <img :class="{'hide' : datapage.hid}":src="datapage.image" :alt="datapage.alt">
         <input type="text" v-model="datapage.message">
-        <button @click="methods.hidden">Nascondi l'immagine</button>
+        <!-- <button @click="methods.hidden">Nascondi l'immagine</button> -->
         <ul v-for="dogs in datapage.imageArray">
             <li>
                 <img :src="dogs" alt="">
